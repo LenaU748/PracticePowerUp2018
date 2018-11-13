@@ -4,6 +4,7 @@
 package org.usfirst.frc.team4087.robot;
 
 import org.usfirst.frc.team4087.robot.subsystems.Drivebase;
+import org.usfirst.frc.team4087.robot.subsystems.WinchElevator;
 
 import com.ctre.phoenix.motorcontrol.LimitSwitchNormal;
 import com.ctre.phoenix.motorcontrol.LimitSwitchSource;
@@ -16,11 +17,13 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 public class Robot extends TimedRobot {
 	public static OI oi;
 	public static Drivebase drivebase;
+	public static WinchElevator winch;
 	
 	@Override
 	public void robotInit() {
 		oi = new OI();
 		drivebase = new Drivebase();
+		winch = new WinchElevator();
 	}
 
 	@Override
