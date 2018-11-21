@@ -14,10 +14,8 @@ public enum RobotMap {
 	WINCH_MOTOR(4),
 	WINCH_SLAVE(5),
 	//Control Mappings
-	DLEFT_JOYSTICK(0),
-	DRIGHT_JOYSTICK(0),
-	OLEFT_JOYSTICK(1),
-	ORIGHT_JOYSTICK(1);
+	DRIVE_JOYSTICK(0),
+	OPERATE_JOYSTICK(1);
 	//
 
 	public final int value;

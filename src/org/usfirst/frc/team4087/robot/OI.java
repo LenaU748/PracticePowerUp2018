@@ -10,44 +10,42 @@ public class OI {
 
 	public static final double JOY_DEADZONE = 0.01;
 	
-	public final Joystick DLEFT_JOY = new Joystick(RobotMap.DLEFT_JOYSTICK.value);
-	public final Joystick DRIGHT_JOY = new Joystick(RobotMap.DRIGHT_JOYSTICK.value);
-	public final Joystick OLEFT_JOY = new Joystick(RobotMap.OLEFT_JOYSTICK.value);
-	public final Joystick ORIGHT_JOY = new Joystick(RobotMap.ORIGHT_JOYSTICK.value);
-	
+	public final Joystick DRIVE_JOY = new Joystick(RobotMap.DRIVE_JOYSTICK.value);
+	public final Joystick OPERATE_JOY = new Joystick(RobotMap.OPERATE_JOYSTICK.value);
+
 	public double getDLeftJoyX() {
-		double raw = DLEFT_JOY.getX();
+		double raw = DRIVE_JOY.getX();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	
 	public double getDLeftJoyY() {
-		double raw = DLEFT_JOY.getY();
+		double raw = DRIVE_JOY.getY();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	
 	public double getDRightJoyX() {
-		double raw = DRIGHT_JOY.getX();
+		double raw = DRIVE_JOY.getX();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	
 	public double getDRightJoyY() {
-		double raw = DRIGHT_JOY.getY();
+		double raw = DRIVE_JOY.getY();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	public double getOLeftJoyX() {
-		double raw = OLEFT_JOY.getX();
+		double raw = OPERATE_JOY.getX();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	public double getOLeftJoyY() {
-		double raw = OLEFT_JOY.getY();
+		double raw = OPERATE_JOY.getY();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	public double getORightJoyX() {
-		double raw = ORIGHT_JOY.getX();
+		double raw = OPERATE_JOY.getX();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	public double getORIGHTJoyY() {
-		double raw = ORIGHT_JOY.getY();
+		double raw = OPERATE_JOY.getY();
 		return Math.abs(raw) < JOY_DEADZONE ? 0.0 : raw;
 	}
 	
